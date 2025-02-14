@@ -7,25 +7,34 @@
     <title>O Tempo</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card weather-card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title">Previsão do Tempo</h5>
+            <div class="">
+                <div class="card weather-card text-center blur-background">
+                    <div class="card-body  ms-auto me-auto">
+                        <h5 class="card-title"> Previsão do Tempo </h5><br>
+                        <input type="text" class="form-control " id="cidade">
                         
-                        
-                        <p class="card-text">Temperatura: <span id="temperature">25°C</span></p>
+                        <button type="button" class="btn btn-primary mb-3 " id="botao-carregar">Carregar</button>
 
-                        <p class="card-text">Condição: <span id="condition">Ensolarado</span></p>
-                        <p class="card-text">Cidade: <span id="city">São Paulo</span></p>          
+                        <h1 id="icone">
+                            <i class="bi bi-cloud-sun"></i>
+                        </h1>
+                        <h2 class="card-text"> <span id="temperatura">25°C</span></h2>
+                       
+                        <p class="card-text"><span id="condicao">Nublado</span></p>
+                        <p class="card-text">Vento: <span id="vento">7 km/h</span></p>
+                                  
                         <div class="weather-icon">
                             <i class="fas fa-sun"></i>
                         </div>
+
+
                     </div>
                 </div>
             </div>

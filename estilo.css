@@ -1,7 +1,22 @@
+
 .container{
     display: flex;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(100, 121, 235), rgb(186, 225, 243));
 }
 .card{
     width: 18rem;
+}
+.weather-card {
+    margin-top: 50px;
+}
+.weather-icon {
+    font-size: 4rem;
+}
+.blur-background {
+   background-color: transparent;
+    backdrop-filter: blur(70px); /* Aplica o efeito de desfoque */
+    border-radius: 10px;
 }
