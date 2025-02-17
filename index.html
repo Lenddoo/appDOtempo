@@ -10,25 +10,23 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body class="bg-custom bg-image">
 
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container ">
+        <div class="row justify-content-center  ">
             <div class="">
-                <div class="card weather-card text-center blur-background">
-                    <div class="card-body  ms-auto me-auto">
-                        <h5 class="card-title"> Previsão do Tempo </h5><br>
-                        <input type="text" class="form-control " id="cidade">
-                        
-                        <button type="button" class="btn btn-primary mb-3 " id="botao-carregar">Carregar</button>
-
-                        <h1 id="icone">
-                            <i class="bi bi-cloud-sun"></i>
-                        </h1>
-                        <h2 class="card-text"> <span id="temperatura">25°C</span></h2>
-                       
-                        <p class="card-text"><span id="condicao">Nublado</span></p>
-                        <p class="card-text">Vento: <span id="vento">7 km/h</span></p>
+                <div class="card text-center blur-background " id="espaco-botao">
+                    <H1>Digite seu local</H1>
+                    <input type="text" class="form-control " id="cidade"><br>
+                    <button type="button" class="btn btn-primary mb-3 " id="botao-carregar">Carregar</button>
+                </div>
+                <div class="card weather-card text-center blur-background " id="cartao">
+                    <div class="card-body  ms-auto me-auto " >
+                        <h5 class="card-title">Hoje </h5>
+                        <h1 id="icone" class="icone-grande">
+                    
+                        <h2 class="card-text"> <span id="temperatura">-- °C</span></h2>
+                        <h2 class="card-text "><i class="bi bi-wind"></i> <span id="vento">-- km/h</span></h2>
                                   
                         <div class="weather-icon">
                             <i class="fas fa-sun"></i>
@@ -43,6 +41,7 @@
 
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

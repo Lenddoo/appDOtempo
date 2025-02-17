@@ -1,10 +1,21 @@
+#cartao{
+    display: none;
+}
 
+.bg-custom {
+    background-image: url('pexels-lilartsy-1192328.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100% ;
+}
 .container{
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, rgb(100, 121, 235), rgb(186, 225, 243));
+    background-color: transparent;
+    backdrop-filter: blur(6px); /* Aplica o efeito de desfoque */
+    border-radius: 10px;
 }
 .card{
     width: 18rem;
@@ -16,7 +27,33 @@
     font-size: 4rem;
 }
 .blur-background {
-   background-color: transparent;
-    backdrop-filter: blur(70px); /* Aplica o efeito de desfoque */
+    background-color: transparent;
+    backdrop-filter: blur(90px); /* Aplica o efeito de desfoque */
     border-radius: 10px;
 }
+.amarelo{
+    color: yellow;
+}
+.cinza{
+    color: white;
+}
+.azul{
+    color: lightblue;
+}
+.azul-forte{
+    color: rgb(9, 74, 253);
+}
+
+.sol{
+    background-color: rgba(255, 174, 0, 0.205);
+}
+.chuva-leve{
+    background-color: rgb(64, 108, 156, 0.308);
+}
+.nublado{
+    background-color: rgba(128, 128, 128, 0.308);
+}
+.icone-grande {
+    font-size: 60px; /* Ajuste o tamanho conforme necessário */
+}
+    
